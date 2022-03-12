@@ -1,160 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dreamhosting.ca</title>
-    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Livvic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <style>
-        body {
-            background: url(img/pexels-christina-morillo-1181354.jpg);
-            background-size: cover;
-            background-position-x: 50rem;
+
+
+      @media (max-width: 600px) {
+        .price-box {
+          margin: 1rem 0 !important;
         }
-        
-        .fs-1 {
-            font-size: 1rem;
+        .title-page {
+          display: none;
         }
-        
-        .fs-2 {
-            font-size: 2rem;
-        }
-        
-        .fs-3 {
-            font-size: 3rem;
-        }
-        
-        .fs-4 {
-            font-size: 4rem;
-        }
-        
-        .bblr {
-            border-bottom-left-radius: 100px !important;
-        }
-        
-        .border-3px {
-            border-width: 3px !important;
-        }
-        
-        .mp {
-            position: absolute;
-            top: 3.25rem;
-            left: 50%;
-            transform: translate(-50%, 0%);
-        }
-        
-        .fa-times {
-            font-size: 1.5rem;
-        }
-        
-        .fa {
-            padding: 0 .5em;
-        }
-        
-        .price-box:hover {
-            transform: scale(1.06);
-            transition: .5s;
-        }
-        
-        @media (max-width:600px) {
-            .price-box {
-                margin: 1rem 0 !important;
-            }
-            .title-page {
-                display: none;
-            }
-        }
-        
-        a:not([href]):not([tabindex]),
-        .btn {
-            color: white;
-            cursor: pointer;
-        }
-        
-        .navbar-top-area {
-            background-color: rgba(0, 0, 139, 0.699);
-            padding: 0.5em;
-            display: flex;
-            justify-content: space-evenly;
-            color: white;
-        }
-        
-        .logo {
-            color: blue;
-        }
-        
-        .logo>span {
-            color: whitesmoke;
-        }
+      }
+
+      a:not([href]):not([tabindex]),
+      .btn {
+        color: white;
+        cursor: pointer;
+      }
+
+      .navbar-top-area {
+        background-color: rgb(0 0 0);
+        padding: 0.5em;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+      }
+
+      .logo {
+        color: blue;
+      }
+
+      .logo > span {
+        color: whitesmoke;
+      }
+
+      
+
+      /* main css */
+      .main-container {
+        background-color: white;
+        padding: 1.5em;
+        border: .8px solid gainsboro;
+        border-radius: 10px;
+      }
+      .card_container{
+        height: 80vh;
+        padding: 1em;
+        display: grid;
+        place-items: center;
+      }
+
+      .top-container{
+        display: flex;
+        align-items: center;
+        padding: 2em;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        margin: 1rem;
+      }
+
+      .original-price{
+        margin-bottom: 0;
+        text-decoration: line-through;
+        color: #09710a;
+      }
+
+      .pack-price-rate{
+        margin-left: 2rem;
+      }
+
+      .bottom-container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+      }
+
+      .Promo-code-area{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 1rem 0;
+      }
+      .Promo-code-area p{
+        margin:.2rem;
+      }
+
+      .promo-title{
+        font-weight: 700;
+      }
+
+      .real-promo{
+        background-color: lavender;
+        padding: .2em;
+        border-radius: 5px;
+      }
+
+      .last-message{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .last-message-heading span{
+        font-weight: 600;
+      }
+
+      .mark-icon{
+        margin: 0 .3rem;
+        color: green;
+      }
+
+      .btn-buy{
+        display: block;
+        text-align: center;
+        background-color: black;
+        padding: 1em .5em;
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        text-decoration: none !important;
+      }
+
+      .btn-buy:hover{
+        color: lavender;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
 
+    <div class="navbar-top-area">
+        <h1 class="logo">Dream<span>Hosting</span></h1>
+        <h1 class="title-page">SSL Certificate</h1>
+      </div>
 
-    <section class="text-center pb-4">
-        <div class="navbar-top-area">
-            <h1 class="logo">Dream<span>Hosting</span></h1>
-            <h1 class="title-page">Plan catalogues</h1>
+      <div class="card_container">
+        <div class="main-container">
+          <h4 class="pack-type">Standard SSL</h4>
+          <div class="top-container">
+            <div class="pack-price-title">
+              <h3 class="valid-year">1 Year</h3>
+              <p>
+                Renews March 2023 for ₹380/mo per plan (₹4,560.00 total per
+                plan)
+              </p>
+            </div>
+            <div class="pack-price-rate">
+              <p class="original-price">₹460.00</p>
+              <p class="dis-original_price">₹300.00/mo</p>
+            </div>
+          </div>
 
+          <div class="bottom-container">
+              <h2 class="subtotal">Subtotal (INR)</h2>
+              <h2 class="total-payable">3600.00</h2>
+          </div>
+          <div class="Promo-code-area">
+            <p class="promo-title">Promo Code:</p>
+            <p class="real-promo">NEWUSER300 </p>
+          </div>
+          <div class="last-message">
+            <span class="material-icons mark-icon">
+              done
+              </span>
+            <P class="last-message-heading"><span>VALID PROMO CODE.</span> You're getting the best price we've got.</P>
+          </div>
+          <hr>
+          <a href="https://imjo.in/b4J4nF" class="btn-buy">Order Now</a>
         </div>
-        <article class="d-inline-flex card m-1 mt-4 ml-3 mr-3 p-0 border-success border-3px price-box">
-            <h4 class="card-header text-light bg-success border-0 rounded-0 text-center">Starter</h4>
-            <header class="card-body text-light text-center bg-success bblr">
-                <h1>₹180 <sub class="fs-1">Per Month</sub></h1>
-            </header>
-            <footer class="card-body bg-white text-dark text-center">
-                <ul class="list-unstyled text-left">
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>1 Website</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>30 GB SSD Storage</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>~10000 Visits Monthly</li>
-                    <li class="lead"><i class="fas fa fa-times text-danger" aria-hidden="true"></i>GIT Access</li>
-                    <li class="lead"><i class="fas fa fa-times text-danger" aria-hidden="true"></i>Free Domain</li>
-                </ul>
-                <a href="https://www.instamojo.com/@dream_hosting_gateway/leb52922c8aaa4194b6f64ae323d86485/" target="_blank" class="btn btn-important btn-success ml-auto pl-3 pr-3 ">Included</a>
-            </footer>
-        </article>
-        <article class="d-inline-flex card m-1 ml-3 mr-3 p-0 border-warning border-3px price-box">
-            <h4 class="card-header text-light bg-warning border-0 rounded-0 text-center">Standard</h4>
-            <header class="card-body text-light text-center bg-warning bblr">
-                <h1>₹250<sub class="fs-1"> Per Month</sub></h1>
-            </header>
-            <footer class="card-body bg-white text-dark text-center">
-                <ul class="list-unstyled text-left">
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>100 Website</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>30 GB SSD Storage</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>~10000 Visits Monthly</li>
-                    <li class="lead"><i class="fas fa fa-times text-danger" aria-hidden="true"></i>GIT Access</li>
-                    <li class="lead"><i class="fas fa fa-times text-danger" aria-hidden="true"></i>Free Domain</li>
-                </ul>
-                <h6 class="badge badge-dark p-1 text-warning mp"><i class="fa fa-star" aria-hidden="true"></i> Most Popular <i class="fa fa-star" aria-hidden="true"></i></h6>
-                <a target="_blank" href="https://www.instamojo.com/@dream_hosting_gateway/l83c754ea55e54ad2984f980761dde8a8/" class="btn btn-warning ml-auto pl-3 pr-3">Subscibe</a>
-            </footer>
-        </article>
-        <article class="d-inline-flex card m-1 ml-3 mr-3 p-0 border-danger border-3px price-box">
-            <h4 class="card-header text-light bg-danger border-0 rounded-0 text-center">Advanced</h4>
-            <header class="card-body text-light text-center bg-danger bblr">
-                <h1>₹630.50 <sub class="fs-1">Per Month</sub></h1>
-            </header>
-            <footer class="card-body bg-white text-dark text-center">
-                <ul class="list-unstyled text-left">
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>300 Website</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>30 GB SSD Storage</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>~10000 Visits Monthly</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>Free Domain</li>
-                    <li class="lead"><i class="fa fa-check text-success" aria-hidden="true"></i>GIT Access</li>
-                </ul>
-                <button class="btn btn-danger ml-auto pl-3 pr-3">Subscibe</button>
-            </footer>
-        </article>
-    </section>
-
-</body>
-
+      </div>
+  </body>
 </html>
